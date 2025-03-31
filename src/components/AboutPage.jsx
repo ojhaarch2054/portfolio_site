@@ -3,6 +3,17 @@ import picture from "../assets/archPicture.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 const AboutPage = () => {
+  const youtubeClick = () => {
+    window.open("https://www.youtube.com/@ItsmeArchana-8")
+  }
+  const tiktokClick = () => {
+    window.open("https://www.tiktok.com/@arch_ana123?lang=en")
+
+  }
+  const instaClick = () => {
+    window.open("https://www.instagram.com/ojhaarchana30/")
+
+  }
   return (
     <div>
       <div className="container mt-2">
@@ -28,16 +39,13 @@ const AboutPage = () => {
               </small>
             </h3>
             <div className="d-flex gap-3 mt-3">
-              <button className="btn border">
-                <i className="bi bi-facebook"></i>
-              </button>
-              <button className="btn border">
+              <button className="btn border" onClick={instaClick}>
                 <i className="bi bi-instagram"></i>
               </button>
-              <button className="btn border">
+              <button className="btn border" onClick={tiktokClick}>
                 <i className="bi bi-tiktok"></i>
               </button>
-              <button className="btn border">
+              <button className="btn border" onClick={youtubeClick}>
                 <i className="bi bi-youtube"></i>
               </button>
             </div>

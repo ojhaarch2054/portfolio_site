@@ -1,14 +1,20 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "../styles/project.css";
-import picture from "../assets/archPicture.png";
+//import picture from "../assets/archPicture.png";
+import budget from "../assets/budgetapp.webp";
+import movie from "../assets/movie2.jpeg";
+import quiz from "../assets/quiz.jpg";
+import feedback from "../assets/feedback.jpeg";
+import quote from "../assets/quote.jpg";
+import weather from "../assets/weather.jpg"
+
 
 const projects = [
   {
     id: 1,
     title: "Project 1",
-    image: picture,
+    image: budget,
     description: "Description of Project 1",
     link: "#",
     githubLink: "https://github.com/ojhaarch2054/portfolio_site",
@@ -16,7 +22,7 @@ const projects = [
   {
     id: 2,
     title: "Project 2",
-    image: picture,
+    image: movie,
     description: "Description of Project 2",
     link: "#",
     githubLink: "https://github.com/ojhaarch2054/portfolio_site",
@@ -24,7 +30,7 @@ const projects = [
   {
     id: 3,
     title: "Project 3",
-    image: picture,
+    image: quiz,
     description: "Description of Project 3",
     link: "#",
     githubLink: "https://github.com/ojhaarch2054/portfolio_site",
@@ -32,7 +38,7 @@ const projects = [
   {
     id: 4,
     title: "Project 4",
-    image: picture,
+    image: feedback,
     description: "Description of Project 4",
     link: "#",
     githubLink: "https://github.com/ojhaarch2054/portfolio_site",
@@ -40,7 +46,7 @@ const projects = [
   {
     id: 5,
     title: "Project 5",
-    image: picture,
+    image: quote,
     description: "Description of Project 5",
     link: "#",
     githubLink: "https://github.com/ojhaarch2054/portfolio_site",
@@ -48,7 +54,7 @@ const projects = [
   {
     id: 6,
     title: "Project 6",
-    image: picture,
+    image: weather,
     description: "Description of Project 6",
     link: "#",
     githubLink: "https://github.com/ojhaarch2054/portfolio_site",
@@ -78,14 +84,14 @@ const Projects = () => {
               <div className="row justify-content-center">
                 {/*it will map over the first 3 projects start from 0 index resulting in 3 item*/}
                 {projects.slice(0, 3).map((project) => (
-                  <div className="col-md-4" key={project.id}>
-                    <div className="card">
+                  <div className="col-md-4 d-flex align-items-stretch" key={project.id}>
+                    <div className="card card h-100">
                       <img
                         src={project.image}
                         className="card-img-top"
                         alt={project.title}
                       />
-                      <div className="card-body">
+                      <div className="card-body ">
                         <h5 className="card-title">{project.title}</h5>
                         <p className="card-text">{project.description}</p>
                         <a href={project.link} className="btn webBtn">
@@ -115,7 +121,7 @@ const Projects = () => {
               <div className="row justify-content-center">
                 {/*it will map over the projects from index 3 to 5 */}
                 {projects.slice(3, 6).map((project) => (
-                  <div className="col-md-4" key={project.id}>
+                  <div className="col-md-4 d-flex align-items-stretch" key={project.id}>
                     <div className="card">
                       <img
                         src={project.image}
