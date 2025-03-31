@@ -22,4 +22,9 @@
   .next-btn {
     margin-left: 20px;
   }
-  
+
+  /*for web btn*/
+  .webBtn{
+    background-color: #305478;
+    color: white;
+  }

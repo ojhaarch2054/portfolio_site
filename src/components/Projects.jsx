@@ -88,7 +88,7 @@ const Projects = () => {
                       <div className="card-body">
                         <h5 className="card-title">{project.title}</h5>
                         <p className="card-text">{project.description}</p>
-                        <a href={project.link} className="btn btn-primary">
+                        <a href={project.link} className="btn webBtn">
                           Visit Website
                         </a>
                         <a
@@ -99,7 +99,7 @@ const Projects = () => {
                               "noopener,noreferrer"
                             )
                           }
-                          className="btn btn-primary mx-2"
+                          className="btn webBtn mx-2"
                         >
                           <i className="bi bi-github"></i>
                         </a>
@@ -125,7 +125,7 @@ const Projects = () => {
                       <div className="card-body">
                         <h5 className="card-title">{project.title}</h5>
                         <p className="card-text">{project.description}</p>
-                        <a href={project.link} className="btn btn-primary">
+                        <a href={project.link} className="btn webBtn">
                           Visit Website
                         </a>
                         <a
@@ -136,7 +136,7 @@ const Projects = () => {
                               "noopener,noreferrer"
                             )
                           }
-                          className="btn btn-primary mx-2"
+                          className="btn webBtn mx-2"
                         >
                           <i className="bi bi-github"></i>
                         </a>
