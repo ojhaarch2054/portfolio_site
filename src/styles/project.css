@@ -1,3 +1,25 @@
 .card{
     width: 18rem;
   }
+
+  .custom-carousel-btn {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #000;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .custom-carousel-btn:hover {
+    color: #007bff;
+  }
+  
+  .prev-btn {
+    margin-right: 20px;
+  }
+  
+  .next-btn {
+    margin-left: 20px;
+  }
+  
