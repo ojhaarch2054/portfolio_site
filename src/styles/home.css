@@ -9,3 +9,13 @@
     padding-left: 2%;
     padding-right: 2%;
 }
+
+.sendBtn{
+    background-color: #305478;
+    color: white;
+}
+
+.closeBtn{
+    background-color: #cd4848;
+    color: white;
+}
