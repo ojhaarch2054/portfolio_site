@@ -1,6 +1,7 @@
 import React from "react";
 import picture from "../assets/archPicture.png";
 import "../styles/home.css";
+import mycv from "../assets/Archana_ojha_cv.pdf"
 
 const HomePage = () => {
   return (
@@ -20,8 +21,10 @@ const HomePage = () => {
                 nulla necessitatibus aspernatur, inventore eum.
               </small>
             </h3>
-            <button className="btn border hireBtn mt-3">Hire Me</button>
-            <button className="btn border mx-4 cvBtn mt-3">CV</button>
+            <button className="btn border hireBtn mt-3" >Hire Me</button>
+            
+            <button className="btn border mx-4 cvBtn mt-3 "
+            onClick={() => window.open(mycv, '_blank', 'noopener,noreferrer')}>CV</button>
           </div>
 
           {/*image Section */}
