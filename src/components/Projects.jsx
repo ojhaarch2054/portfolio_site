@@ -13,53 +13,61 @@ import weather from "../assets/weather.jpg"
 const projects = [
   {
     id: 1,
-    title: "Project 1",
+    title: "Budget Tracker",
     image: budget,
-    description: "Description of Project 1",
+    description: "It is a web application which allows user to manage their daily finances. It is made using React, Bootstrap, Nodejs, express and PostgreSQL.",
     link: "#",
-    githubLink: "https://github.com/ojhaarch2054/portfolio_site",
+    githubLink: "https://ojhaarch2054/Budget_tracker",
   },
   {
     id: 2,
-    title: "Project 2",
+    title: "Movie App",
     image: movie,
-    description: "Description of Project 2",
+    description: "This is a complete movie application made using React, Node.js, Express and PostgreSQL and was made in a group as a part of the coursework. The movie app enables users to explore movies, view showtimes, create groups and engage with other users.",
     link: "#",
-    githubLink: "https://github.com/ojhaarch2054/portfolio_site",
+    githubLink: " https://github.com/Movie-App-Project-OAMK-G15/movie_app",
   },
   {
     id: 3,
-    title: "Project 3",
+    title: "Quizzify",
     image: quiz,
-    description: "Description of Project 3",
+    description: "This app was developed in a group for our coursework. It is a quiz app in which user can take quizzes on various topics. The results from the quizzes are stored and the user can find insights on their performance on the quizzes. I worked in the UI design for this project using Bootstrap, HTML and CSS.",
     link: "#",
-    githubLink: "https://github.com/ojhaarch2054/portfolio_site",
+    githubLink: "https://github.com/Gloryozo/Quizzify",
   },
   {
     id: 4,
-    title: "Project 4",
+    title: "Feedback Page",
     image: feedback,
-    description: "Description of Project 4",
+    description: "Created a feedback page using Bootstrap, Node.js, Javascript, Express, and PostgreSQL. The page stores customer details and feedback in a database. Also, the page user can give feedback by text and rating stars.",
     link: "#",
-    githubLink: "https://github.com/ojhaarch2054/portfolio_site",
+    githubLink: "https://github.com/ojhaarch2054/Feedback_page",
   },
   {
     id: 5,
-    title: "Project 5",
+    title: "Quote_App",
     image: quote,
-    description: "Description of Project 5",
-    link: "#",
-    githubLink: "https://github.com/ojhaarch2054/portfolio_site",
+    description: "I made this website using HTML, CSS, JS, and API. You can share quotes on Twitter or Facebook by clicking the icons, or simply copy the quotes. Click the New Quote button to get a new quote whenever you want.",
+    link: "https://daily-quote-generater.onrender.com/",
+    githubLink: "https://github.com/ojhaarch2054/Daily-Quote-generater",
   },
   {
     id: 6,
-    title: "Project 6",
+    title: "Weather_App",
     image: weather,
-    description: "Description of Project 6",
+    description: "This is a simple website where you can check the current weather for different places. The website fetches weather data from the OpenWeatherMap API and displays it in a user-friendly format. I built it using React and OpenWeatherMap API to get the weather information online.",
     link: "#",
-    githubLink: "https://github.com/ojhaarch2054/portfolio_site",
+    githubLink: "https://github.com/ojhaarch2054/Weather-info",
   },
 ];
+
+const webClick = () => {
+  window.open(projects.link)
+}
+
+const githubClick = () => {
+  window.open(projects.githubLink)
+}
 
 const Projects = () => {
   return (
@@ -98,12 +106,7 @@ const Projects = () => {
                           Visit Website
                         </a>
                         <a
-                          onClick={() =>
-                            window.open(
-                              project.githubLink,
-                              "_blank",
-                              "noopener,noreferrer"
-                            )
+                          onClick={githubClick
                           }
                           className="btn webBtn mx-2"
                         >
@@ -135,12 +138,7 @@ const Projects = () => {
                           Visit Website
                         </a>
                         <a
-                          onClick={() =>
-                            window.open(
-                              project.githubLink,
-                              "_blank",
-                              "noopener,noreferrer"
-                            )
+                          onClick={webClick
                           }
                           className="btn webBtn mx-2"
                         >
