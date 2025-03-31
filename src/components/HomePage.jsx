@@ -1,16 +1,14 @@
 import React from "react";
-import NavBar from "./NavBar";
 import picture from "../assets/archPicture.png";
 import "../styles/home.css";
 
 const HomePage = () => {
   return (
     <div>
-      <NavBar />
-      <div className="container mt-2">
-        <div className="img-container row align-items-center">
-          {/*for txt*/}
-          <div className="col-md-8">
+      <div className="container mt-3">
+        <div className="row align-items-center">
+          {/*text Section */}
+          <div className="col-12 col-md-8 order-2 order-md-1">
             <h3>
               Hi, I'm Archana Ojha <br />
               <small>Web Developer</small>
@@ -22,10 +20,12 @@ const HomePage = () => {
                 nulla necessitatibus aspernatur, inventore eum.
               </small>
             </h3>
+            <button className="btn border hireBtn mt-3">Hire Me</button>
+            <button className="btn border mx-4 cvBtn mt-3">CV</button>
           </div>
 
-          {/*for img*/}
-          <div className="col-md-4 text-center">
+          {/*image Section */}
+          <div className="col-12 col-md-4 text-center order-1 order-md-2 mb-3 mb-md-0">
             <img
               src={picture}
               alt="img"

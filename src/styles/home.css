@@ -1,2 +1,11 @@
+.hireBtn{
+    background-color: #305478;
+    color: white;
+}
 
-  
+.cvBtn{
+    background-color: #305478;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+}
