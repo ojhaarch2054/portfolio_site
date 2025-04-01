@@ -8,6 +8,7 @@ import Skills from "./components/Skills";
 import Contacts from "./components/Contact";
 import HomePage from "./components/HomePage";
 import NavBar from "./components/NavBar";
+import "./styles/app.css"
 
 const App = () => {
   useEffect(() => {
@@ -21,6 +22,13 @@ const App = () => {
       offset: 100, 
     });
   }, []);
+
+  const backToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
 
   return (
     <>
@@ -40,6 +48,14 @@ const App = () => {
       <div id="contacts" className="container mt-5" data-aos="fade-up">
         <Contacts />
       </div>
+
+      {/*back to top btn*/}
+      <button
+        className="btn position-fixed bottom-0 end-0 m-3 backToTop"
+        onClick={backToTop}
+      >
+        Back to Top
+      </button>
     </>
   );
 };
