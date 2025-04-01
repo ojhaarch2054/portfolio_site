@@ -93,13 +93,13 @@ const Projects = () => {
                 {/*it will map over the first 3 projects start from 0 index resulting in 3 item*/}
                 {projects.slice(0, 3).map((project) => (
                   <div className="col-md-4 d-flex align-items-stretch" key={project.id}>
-                    <div className="card card h-100">
+                    <div className="card card h-100 d-flex flex-column">
                       <img
                         src={project.image}
                         className="card-img-top"
                         alt={project.title}
                       />
-                      <div className="card-body ">
+                      <div className="card-body  flex-column mt-5 text-center">
                         <h5 className="card-title">{project.title}</h5>
                         <p className="card-text">{project.description}</p>
                         <a href={project.link} className="btn webBtn">
@@ -125,13 +125,13 @@ const Projects = () => {
                 {/*it will map over the projects from index 3 to 5 */}
                 {projects.slice(3, 6).map((project) => (
                   <div className="col-md-4 d-flex align-items-stretch" key={project.id}>
-                    <div className="card">
+                    <div className="card d-flex flex-column">
                       <img
                         src={project.image}
                         className="card-img-top"
                         alt={project.title}
                       />
-                      <div className="card-body">
+                      <div className="card-body mt-5 flex-column  text-center ">
                         <h5 className="card-title">{project.title}</h5>
                         <p className="card-text">{project.description}</p>
                         <a href={project.link} className="btn webBtn">
