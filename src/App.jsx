@@ -9,6 +9,7 @@ import Contacts from "./components/Contact";
 import HomePage from "./components/HomePage";
 import NavBar from "./components/NavBar";
 import "./styles/app.css"
+import { MessageProvider } from "./context/MessageContext";
 
 const App = () => {
   useEffect(() => {
@@ -32,6 +33,7 @@ const App = () => {
 
   return (
     <>
+    <MessageProvider>
       <NavBar />
       <div id="home" className="container mt-5" data-aos="fade-up">
         <HomePage />
@@ -56,6 +58,7 @@ const App = () => {
       >
         Back to Top
       </button>
+      </MessageProvider>
     </>
   );
 };

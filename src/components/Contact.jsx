@@ -1,38 +1,11 @@
 import React from "react";
 import "../styles/contact.css";
-import axios from "axios";
-import { useState } from "react";
+import { useContext } from "react";
+import { MessageContext } from "../context/MessageContext";
 
 const Contact = () => {
-  //state to store email
-  const [email, setEmail] = useState("");
-  //to store msg
-  const [message, setMessage] = useState("");
-  //state to store status
-  const [status, setStatus] = useState("");
-
-  //to handle sending message
-  const sendBtn = async () => {
-    console.log("sent");
-    console.log("Sending message...");
-    console.log({ email, message });
-    try {
-      //post rqst to backend with email and msg
-      const response = await axios.post("http://localhost:3000/send", {
-        email,
-        message,
-      });
-      console.log("Response received:", response.data);
-      //update status with server response
-      setStatus(response.data.message);
-      setEmail("")
-      setMessage("")
-    } catch (error) {
-      console.error("Error occurred:", error);
-      //update status on fail
-      setStatus("Failed to send message.");
-    }
-  };
+  const { email, setEmail, message, setMessage, status, sendBtn } =
+  useContext(MessageContext);
 
   return (
     <div className="container my-5">

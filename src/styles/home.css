@@ -24,3 +24,7 @@
     font-size: 1.25rem;
     font-weight: 300;
 }
+
+.dialogBox{
+    background-color: rgba(0, 0, 0, 0.5);
+}

@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import picture from "../assets/arch.png";
 import "../styles/home.css";
 import mycv from "../assets/Archana_ojha_cv.pdf";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import { MessageContext } from "../context/MessageContext";
 
 const HomePage = () => {
   //for dialog box
   const [dialogBoxOpen, setDialogBoxOpen] = useState(false);
+  //for msg send
+  const { email, setEmail, message, setMessage, status, sendBtn } =
+  useContext(MessageContext);
 
   const handleHireMeClick = () => {
     setDialogBoxOpen(true);
@@ -70,10 +74,9 @@ const HomePage = () => {
           {/*dialog box */}
           {dialogBoxOpen && (
             <div
-              className="modal show d-block"
+              className="modal show d-block dialogBox"
               tabIndex="-1"
               role="dialog"
-              style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
             >
               <div className="modal-dialog" role="document">
                 <div className="modal-content">
@@ -95,6 +98,8 @@ const HomePage = () => {
                         className="form-control"
                         id="input1"
                         placeholder="Enter your amail address"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                     </div>
                     <div className="mb-4">
@@ -103,10 +108,12 @@ const HomePage = () => {
                         className="form-control"
                         id="input2"
                         rows="5"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                       ></textarea>
                     </div>
 
-                    <button className="btn sendBtn">Send</button>
+                    <button className="btn sendBtn" onClick={sendBtn}>Send</button>
                   </div>
 
                   <div className="modal-footer">
