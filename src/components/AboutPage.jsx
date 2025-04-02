@@ -4,16 +4,14 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 const AboutPage = () => {
   const youtubeClick = () => {
-    window.open("https://www.youtube.com/@ItsmeArchana-8")
-  }
+    window.open("https://www.youtube.com/@ItsmeArchana-8");
+  };
   const tiktokClick = () => {
-    window.open("https://www.tiktok.com/@arch_ana123?lang=en")
-
-  }
+    window.open("https://www.tiktok.com/@arch_ana123?lang=en");
+  };
   const instaClick = () => {
-    window.open("https://www.instagram.com/ojhaarchana30/")
-
-  }
+    window.open("https://www.instagram.com/ojhaarchana30/");
+  };
   return (
     <div>
       <div className="container mt-2">
@@ -24,20 +22,25 @@ const AboutPage = () => {
           </div>
           {/*txt Section */}
           <div className="col-12 col-md-8 order-2">
-            <h3>
-              <small className="text-body-secondary">
-                Hi, I'm Archana Ojha, a student pursuing a Bachelor's degree in
-                Information Technology at OAMK. I’m passionate about technology,
-                with a focus on software development and problem-solving. I
-                enjoy learning new skills and applying them to real-world
-                challenges. I’m particularly interested in web development Feel
+            <h4>
+              <small>
+                Hello! I'm Archana. I am a young and motivated programmer
+                and web developer. I am studying for a Bachelor’s degree in
+                Information Technology at Oulu University of Applied
+                Sciences (OAMK). I have a strong interest in web application
+                development and experience working with JavaScript, Python,
+                TypeScript, React, Node.js, SQL, and PostgreSQL. I enjoy
+                creating full-stack applications as part of my studies and
+                personal projects. I am always learning and improving my skills
+                to build better websites and applications.
               </small>
+              <br />
               <br />
               <small>
                 free to connect with me if you'd like to collaborate or chat
                 about tech!
               </small>
-            </h3>
+            </h4>
             <div className="d-flex gap-3 mt-3">
               <button className="btn border" onClick={instaClick}>
                 <i className="bi bi-instagram"></i>

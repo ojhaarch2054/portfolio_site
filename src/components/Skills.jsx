@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="container my-5">
+    <div className="container mx-5">
       <h1 className="text-center mb-4">Skills</h1>
       <div className="row">
         {/*fromntend*/}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import picture from "../assets/archPicture.png";
+import picture from "../assets/arch.png";
 import "../styles/home.css";
 import mycv from "../assets/Archana_ojha_cv.pdf";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -38,7 +38,7 @@ const HomePage = () => {
               Hi, I'm Archana Ojha <br />
               <small>Web Developer</small>
               <br />
-              <small className="text-body-secondary">
+              <small className="txt">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque,
                 numquam placeat aliquam fuga impedit aut odio reprehenderit
                 perferendis minima natus quidem voluptas ut voluptatem repellat
@@ -60,10 +60,10 @@ const HomePage = () => {
             </button>
             <div className="d-flex gap-3 mt-3">
               <button className="btn border" onClick={linkdinClick}>
-              <i class="bi bi-linkedin"></i>
+              <i className="bi bi-linkedin"></i>
               </button>
               <button className="btn border" onClick={githubClick}>
-              <i class="bi bi-github"></i>
+              <i className="bi bi-github"></i>
               </button>
             </div>
           </div>
@@ -86,7 +86,7 @@ const HomePage = () => {
                       onClick={handleCloseDialog}
                     ></button>
                   </div>
-                  <div className="modal-body">
+                  <div className="modal-body text-black">
                     <p>Please fill out the form to get in touch!</p>
                     <div className="mb-4">
                       <label className="form-label">Email address:</label>
@@ -124,7 +124,7 @@ const HomePage = () => {
           )}
           {/*image Section */}
           <div className="col-12 col-md-4 text-center order-1 order-md-2 mb-3 mb-md-0">
-            <img src={picture} alt="img" className="img-fluid rounded-circle" />
+            <img src={picture} alt="img" className="img-fluid imgSize" />
           </div>
         </div>
       </div>

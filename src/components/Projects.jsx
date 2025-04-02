@@ -3,11 +3,11 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "../styles/project.css";
 //import picture from "../assets/archPicture.png";
 import budget from "../assets/budgetapp.webp";
-import movie from "../assets/movie2.jpeg";
-import quiz from "../assets/quiz.jpg";
-import feedback from "../assets/feedback.jpeg";
+import movie from "../assets/movies.webp";
+import quiz from "../assets/quiz.png";
+import feedback from "../assets/feedback.png";
 import quote from "../assets/quote.jpg";
-import weather from "../assets/weather.jpg"
+import weather from "../assets/weather.png";
 
 
 const projects = [
@@ -15,7 +15,7 @@ const projects = [
     id: 1,
     title: "Budget Tracker",
     image: budget,
-    description: "It is a web application which allows user to manage their daily finances. It is made using React, Bootstrap, Nodejs, express and PostgreSQL.",
+    description: "It is a web application which allows user to manage their daily finances. It is made using React, Bootstrap, Nodejs, express and PostgreSQL.This have has authentication and authorizattion feature. I have used JWT for authentication.",
     link: "#",
     githubLink: "https://ojhaarch2054/Budget_tracker",
   },
@@ -71,7 +71,7 @@ const githubClick = () => {
 
 const Projects = () => {
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 ">
       <h1 className="text-center mb-4">My Projects</h1>
 
       <div className="d-flex align-items-center justify-content-center position-relative">
@@ -85,30 +85,30 @@ const Projects = () => {
           ❮
         </button>
 
-        <div id="projectsCarousel" className="carousel slide w-75">
+        <div id="projectsCarousel" className="carousel slide w-100">
           <div className="carousel-inner">
             {/*for 1st 3 slide*/}
-            <div className="carousel-item active">
-              <div className="row justify-content-center">
+            <div className="carousel-item active ">
+              <div className="row justify-content-center ">
                 {/*it will map over the first 3 projects start from 0 index resulting in 3 item*/}
                 {projects.slice(0, 3).map((project) => (
-                  <div className="col-md-4 d-flex align-items-stretch" key={project.id}>
-                    <div className="card card h-100 d-flex flex-column">
+                  <div className="col-md-4 d-flex align-items-stretch " key={project.id}>
+                    <div className="card cardPart h-100  d-flex flex-column card shadow">
                       <img
                         src={project.image}
-                        className="card-img-top"
+                        className="card-img-top cardImg  equalImg"
                         alt={project.title}
                       />
-                      <div className="card-body  flex-column mt-5 text-center">
+                      <div className="card-body infoPart flex-column text-center">
                         <h5 className="card-title">{project.title}</h5>
                         <p className="card-text">{project.description}</p>
-                        <a href={project.link} className="btn webBtn">
+                        <a href={project.link} className="btn webBtn projectBtn">
                           Visit Website
                         </a>
                         <a
                           onClick={githubClick
                           }
-                          className="btn webBtn mx-2"
+                          className="btn webBtn mx-2 projectBtn"
                         >
                           <i className="bi bi-github"></i>
                         </a>
@@ -124,23 +124,23 @@ const Projects = () => {
               <div className="row justify-content-center">
                 {/*it will map over the projects from index 3 to 5 */}
                 {projects.slice(3, 6).map((project) => (
-                  <div className="col-md-4 d-flex align-items-stretch" key={project.id}>
-                    <div className="card d-flex flex-column">
+                  <div className="col-md-4 d-flex align-items-stretch " key={project.id}>
+                    <div className="card cardPart d-flex flex-column card shadow ">
                       <img
                         src={project.image}
-                        className="card-img-top"
+                        className="card-img-top cardImg equalImg"
                         alt={project.title}
                       />
-                      <div className="card-body mt-5 flex-column  text-center ">
+                      <div className="card-body infoPart flex-column  text-center ">
                         <h5 className="card-title">{project.title}</h5>
                         <p className="card-text">{project.description}</p>
-                        <a href={project.link} className="btn webBtn">
+                        <a href={project.link} className="btn webBtn projectBtn">
                           Visit Website
                         </a>
                         <a
                           onClick={webClick
                           }
-                          className="btn webBtn mx-2"
+                          className="btn webBtn mx-2 projectBtn"
                         >
                           <i className="bi bi-github"></i>
                         </a>
