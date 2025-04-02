@@ -1,5 +1,5 @@
 import React from "react";
-import picture from "../assets/archPicture.png";
+import picture from "../assets/aboumee.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 const AboutPage = () => {
@@ -17,11 +17,11 @@ const AboutPage = () => {
       <div className="container mt-2">
         <div className="row align-items-center">
           {/*img Section */}
-          <div className="col-12 col-md-4 text-center order-1 mb-3 mb-md-0">
-            <img src={picture} alt="img" className="img-fluid rounded-circle" />
+          <div className="col-12 col-md-4 text-center order-1 order-md-2 mb-3 mb-md-0">
+            <img src={picture} alt="img" className="img-fluid " />
           </div>
           {/*txt Section */}
-          <div className="col-12 col-md-8 order-2">
+          <div className="col-12 col-md-8 order-2 order-md-1">
             <h4>
               <small>
                 Hello! I'm Archana. I am a young and motivated programmer
@@ -42,14 +42,14 @@ const AboutPage = () => {
               </small>
             </h4>
             <div className="d-flex gap-3 mt-3">
-              <button className="btn border" onClick={instaClick}>
-                <i className="bi bi-instagram"></i>
+              <button className="btn border shadow" onClick={instaClick}>
+                <i className="bi bi-instagram shadow"></i>
               </button>
-              <button className="btn border" onClick={tiktokClick}>
-                <i className="bi bi-tiktok"></i>
+              <button className="btn border shadow" onClick={tiktokClick}>
+                <i className="bi bi-tiktok shadow"></i>
               </button>
-              <button className="btn border" onClick={youtubeClick}>
-                <i className="bi bi-youtube"></i>
+              <button className="btn border shadow" onClick={youtubeClick}>
+                <i className="bi bi-youtube shadow"></i>
               </button>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import picture from "../assets/arch.png";
+import picture from "../assets/profile.png";
 import "../styles/home.css";
 import mycv from "../assets/Archana_ojha_cv.pdf";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -36,6 +36,11 @@ const HomePage = () => {
     <div>
       <div className="container mt-3">
         <div className="row align-items-center">
+           {/*image Section */}
+           <div className="col-12 col-md-4 text-center order-1 order-md-1 mb-3 mb-md-0">
+            <img src={picture} alt="img" className="img-fluid imgSize" />
+          </div>
+
           {/*text Section */}
           <div className="col-12 col-md-8 order-2 order-md-1">
             <h3>
@@ -50,24 +55,24 @@ const HomePage = () => {
               </small>
             </h3>
             <button
-              className="btn border hireBtn mt-3"
+              className="btn border hireBtn mt-3 shadow"
               onClick={handleHireMeClick}
             >
               Hire Me
             </button>
 
             <button
-              className="btn border mx-4 cvBtn mt-3 "
+              className="btn border mx-4 cvBtn mt-3 shadow"
               onClick={cvClick}
             >
               CV
             </button>
-            <div className="d-flex gap-3 mt-3">
-              <button className="btn border" onClick={linkdinClick}>
-              <i className="bi bi-linkedin"></i>
+            <div className="d-flex gap-3 mt-3 ">
+              <button className="btn border shadow" onClick={linkdinClick}>
+              <i className="bi bi-linkedin shadow"></i>
               </button>
-              <button className="btn border" onClick={githubClick}>
-              <i className="bi bi-github"></i>
+              <button className="btn border shadow" onClick={githubClick}>
+              <i className="bi bi-github shadow"></i>
               </button>
             </div>
           </div>
@@ -129,10 +134,6 @@ const HomePage = () => {
               </div>
             </div>
           )}
-          {/*image Section */}
-          <div className="col-12 col-md-4 text-center order-1 order-md-2 mb-3 mb-md-0">
-            <img src={picture} alt="img" className="img-fluid imgSize" />
-          </div>
         </div>
       </div>
     </div>

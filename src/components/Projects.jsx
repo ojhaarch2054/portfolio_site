@@ -72,7 +72,7 @@ const githubClick = () => {
 const Projects = () => {
   return (
     <div className="container mt-5 ">
-      <h1 className="text-center mb-4">My Projects</h1>
+      <h1 className="text-center mb-5 ">My Projects</h1>
 
       <div className="d-flex align-items-center justify-content-center position-relative">
         {/*left btn to show previous project*/}
@@ -92,7 +92,7 @@ const Projects = () => {
               <div className="row justify-content-center ">
                 {/*it will map over the first 3 projects start from 0 index resulting in 3 item*/}
                 {projects.slice(0, 3).map((project) => (
-                  <div className="col-md-4 d-flex align-items-stretch " key={project.id}>
+                  <div className="col-md-4 d-flex align-items-stretch mt-4" key={project.id}>
                     <div className="card cardPart h-100  d-flex flex-column card shadow">
                       <img
                         src={project.image}

@@ -3,10 +3,10 @@ import React from "react";
 const Skills = () => {
   return (
     <div className="container mx-5">
-      <h1 className="text-center mb-4">Skills</h1>
-      <div className="row">
+      <h1 className="text-center mb-4 ">Skills</h1>
+      <div className="row mt-5">
         {/*fromntend*/}
-        <div className="col-md-4 mb-4">
+        <div className="col-md-4 mb-4 ">
           <div className="card shadow border-0 h-100 d-flex flex-column">
             <div className="card-body">
               <h2 className="card-title text-center mb-3">Frontend</h2>

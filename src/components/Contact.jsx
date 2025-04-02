@@ -37,7 +37,7 @@ const Contact = () => {
               ></textarea>
             </div>
             <div className="text-center">
-              <button className="btn sendBtn" onClick={sendBtn}>
+              <button className="btn sendBtn shadow" onClick={sendBtn}>
                 Send
               </button>
             </div>
