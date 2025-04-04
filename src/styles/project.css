@@ -90,3 +90,30 @@
     overflow-y: auto;
   }
 }
+
+.projectBtn {
+  position: relative;
+}
+
+.projectBtn:hover::after {
+  content: "Haven't deployed yet";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+}
+
+.projectBtn::after {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out;
+}
