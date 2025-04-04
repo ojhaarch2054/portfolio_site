@@ -22,11 +22,11 @@ const AboutPage = () => {
           </div>
           {/*txt Section */}
           <div className="col-12 col-md-7 order-2 order-md-1 mt-5">
-            <h3 className="textSection h3">
-              <small className="txt txtContainer d-block">
+            <h3 className="textSection h3 text-center text-md-start">
+              <small className="txt txtContainer d-block s-6 fs-md-5 text-wrap">
                 Hello! I'm Archana. I am a young and motivated programmer
-                and web developer. I am studying for a Bachelor’s degree in
-                Information Technology at Oulu University of Applied
+                and web developer. I am studying for a Bachelor’s degree
+                in Information Technology at Oulu University of Applied
                 Sciences (OAMK). I have a strong interest in web application
                 development and experience working with JavaScript, Python,
                 TypeScript, React, Node.js, SQL, and PostgreSQL. I enjoy
@@ -35,12 +35,12 @@ const AboutPage = () => {
                 to build better websites and applications.
               </small>
               <br />
-              <small className="h4 d-block  ">
+              <small className="h4 d-block s-6 fs-md-5 ">
                 Feel free to connect with me if you'd like to collaborate or chat
                 about tech!
               </small>
             </h3>
-            <div className="d-flex gap-3 mt-3 mx-3">
+            <div className="d-flex justify-content-center justify-content-md-start gap-3 mt-3 ">
               <button className="btn border shadow text-white iconBtn" onClick={instaClick}>
                 <i className="bi bi-instagram shadow"></i>
               </button>

@@ -41,7 +41,7 @@ const HomePage = () => {
           </div>
 
           {/*text Section */}
-          <div className="col-12 col-md-7  textSection">
+          <div className="col-12 col-md-7  textSection text-wrap">
             <h3>
               Hi, I'm Archana Ojha <br />
               <small className=" fs-5">Web Developer</small>
