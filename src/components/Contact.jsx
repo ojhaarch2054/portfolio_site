@@ -9,7 +9,7 @@ const Contact = () => {
 
   return (
     <div className="container my-5">
-      <h2 className="text-center mb-4">Contact Me</h2>
+      <h2 className="text-center mb-4 titleSize text-decoration-underline">Contact Me</h2>
       <p className="text-center">Please fill out the form to get in touch!</p>
       <div className="d-flex justify-content-center">
         <div className="card shadow cardWidth">

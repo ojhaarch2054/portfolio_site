@@ -1,16 +1,16 @@
 import React from "react";
-
+import "../styles/skills.css"
 const Skills = () => {
   return (
-    <div className="container mx-5">
-      <h1 className="text-center mb-4 ">Skills</h1>
-      <div className="row mt-5">
+    <div className="container skillContainer">
+      <h1 className="text-center mb-4 titleSize text-decoration-underline">Skills</h1>
+      <div className="row mt-5 ">
         {/*fromntend*/}
         <div className="col-md-4 mb-4 ">
-          <div className="card shadow border-0 h-100 d-flex flex-column">
+          <div className="card shadow border-0 h-100 d-flex flex-column skillCard ">
             <div className="card-body">
               <h2 className="card-title text-center mb-3">Frontend</h2>
-              <ul className="list-group list-group-flush">
+              <ul className="list-group list-group-flush ">
                 <li className="list-group-item">
                   <i className="bi bi-code-slash me-2"></i> JavaScript
                 </li>
@@ -30,7 +30,7 @@ const Skills = () => {
 
         {/*backend*/}
         <div className="col-md-4 mb-4">
-          <div className="card shadow border-0 h-100 d-flex flex-column">
+          <div className="card shadow border-0 h-100 d-flex flex-column skillCard">
             <div className="card-body">
               <h2 className="card-title text-center mb-3">Backend</h2>
               <ul className="list-group list-group-flush">
@@ -46,10 +46,10 @@ const Skills = () => {
         </div>
 
         {/*devops and tool*/}
-        <div className="col-md-4 mb-4">
-          <div className="card shadow border-0 h-100 d-flex flex-column">
+        <div className="col-md-4 mb-4 ">
+          <div className="card shadow border-0 h-100 d-flex flex-column skillCard">
             <div className="card-body">
-              <h2 className="card-title text-center mb-3">DevOps/Tools</h2>
+              <h2 className="card-title text-center mb-3">Tools</h2>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
                   <i className="bi bi-terminal me-2"></i> Python
@@ -67,7 +67,7 @@ const Skills = () => {
 
         {/*agile and design */}
         <div className="col-md-4 mb-4">
-          <div className="card shadow border-0 h-100 d-flex flex-column">
+          <div className="card shadow border-0 h-100 d-flex flex-column skillCard">
             <div className="card-body">
               <h2 className="card-title text-center mb-3">Agile & Design</h2>
               <ul className="list-group list-group-flush">
@@ -84,8 +84,8 @@ const Skills = () => {
 
         {/*professional*/}
         <div className="col-md-4 mb-4">
-          <div className="card shadow border-0 h-100 d-flex flex-column">
-            <div className="card-body">
+          <div className="card shadow border-0 h-100 d-flex flex-column skillCard">
+            <div className="card-body ">
               <h2 className="card-title text-center mb-3">Professional Skills</h2>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
@@ -97,6 +97,12 @@ const Skills = () => {
                 <li className="list-group-item">
                   <i className="bi bi-lightbulb me-2"></i> Problem Solving
                 </li>
+                <li className="list-group-item">
+                  <i className="bi bi-lightbulb me-2"></i> Adoptable
+                </li>
+                <li className="list-group-item">
+                  <i className="bi bi-lightbulb me-2"></i> Flexible
+                </li>
               </ul>
             </div>
           </div>
@@ -104,7 +110,7 @@ const Skills = () => {
 
         {/*language*/}
         <div className="col-md-4 mb-4">
-          <div className="card shadow border-0 h-100 d-flex flex-column">
+          <div className="card shadow border-0 h-100 d-flex flex-column skillCard">
             <div className="card-body">
               <h2 className="card-title text-center mb-3">Languages</h2>
               <ul className="list-group list-group-flush">

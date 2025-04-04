@@ -10,7 +10,7 @@ const HomePage = () => {
   const [dialogBoxOpen, setDialogBoxOpen] = useState(false);
   //for msg send
   const { email, setEmail, message, setMessage, status, sendBtn } =
-  useContext(MessageContext);
+    useContext(MessageContext);
 
   const handleHireMeClick = () => {
     setDialogBoxOpen(true);
@@ -21,37 +21,37 @@ const HomePage = () => {
   };
 
   const cvClick = () => {
-    window.open(mycv)
-  }
+    window.open(mycv);
+  };
 
   const linkdinClick = () => {
-    window.open("https://www.linkedin.com/in/archana-ojha-094b8818a/")
-  }
+    window.open("https://www.linkedin.com/in/archana-ojha-094b8818a/");
+  };
 
   const githubClick = () => {
-    window.open("https://github.com/ojhaarch2054")
-
-  }
+    window.open("https://github.com/ojhaarch2054");
+  };
   return (
     <div>
-      <div className="container mt-3">
+      <div className="container ">
         <div className="row align-items-center">
-           {/*image Section */}
-           <div className="col-12 col-md-4 text-center order-1 order-md-1 mb-3 mb-md-0">
+          {/*image Section */}
+          <div className="col-12 col-md-5 col-lg-5 text-center mb-3 mb-md-0">
             <img src={picture} alt="img" className="img-fluid imgSize" />
           </div>
 
           {/*text Section */}
-          <div className="col-12 col-md-8 order-2 order-md-1">
+          <div className="col-12 col-md-7  textSection">
             <h3>
               Hi, I'm Archana Ojha <br />
-              <small>Web Developer</small>
+              <small className=" fs-5">Web Developer</small>
               <br />
-              <small className="txt">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque,
-                numquam placeat aliquam fuga impedit aut odio reprehenderit
-                perferendis minima natus quidem voluptas ut voluptatem repellat
-                nulla necessitatibus aspernatur, inventore eum.
+              <br />
+              <small className="txt d-block">
+                I’m still studying — but I’ve already started creating.
+                <br />
+                Bringing ideas to life on the web with code, design, and
+                curiosity.
               </small>
             </h3>
             <button
@@ -68,11 +68,11 @@ const HomePage = () => {
               CV
             </button>
             <div className="d-flex gap-3 mt-3 ">
-              <button className="btn border shadow" onClick={linkdinClick}>
-              <i className="bi bi-linkedin shadow"></i>
+              <button className="btn border shadow text-white iconBtn" onClick={linkdinClick}>
+                <i className="bi bi-linkedin shadow"></i>
               </button>
-              <button className="btn border shadow" onClick={githubClick}>
-              <i className="bi bi-github shadow"></i>
+              <button className="btn border shadow text-white iconBtn" onClick={githubClick}>
+                <i className="bi bi-github shadow"></i>
               </button>
             </div>
           </div>
@@ -118,7 +118,9 @@ const HomePage = () => {
                       ></textarea>
                     </div>
 
-                    <button className="btn sendBtn" onClick={sendBtn}>Send</button>
+                    <button className="btn sendBtn" onClick={sendBtn}>
+                      Send
+                    </button>
                   </div>
 
                   <div className="modal-footer">

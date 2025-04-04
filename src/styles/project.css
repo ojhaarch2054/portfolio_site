@@ -1,5 +1,9 @@
-.card{
+.projectCard{
     width: 18rem;
+    /*background-color: #646a6f;*/
+    background: linear-gradient(to right, #64809d, #5b5858);
+    color: white;
+
   }
 
   .custom-carousel-btn {
@@ -31,10 +35,12 @@
 
   .cardImg{
     padding: 1.5rem;
+
   }
 
   .cardPart{
     width: 90%;
+
   }
 
   .equalImg {
@@ -54,11 +60,17 @@
 
 /*change the background color of the card body on hover */
 .card:hover .infoPart {
-  background-color: #256db5;
+  
 }
 
 /*hover effect on btn inside the card */
 .card:hover .projectBtn {
   color: white;
   transition: background-color 0.3s ease;
+  background-color: #305478;
 }
+
+.titleSize{
+  font-size: 2.75rem;
+}
+

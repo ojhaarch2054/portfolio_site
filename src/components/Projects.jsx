@@ -71,8 +71,8 @@ const githubClick = () => {
 
 const Projects = () => {
   return (
-    <div className="container mt-5 ">
-      <h1 className="text-center mb-5 ">My Projects</h1>
+    <div className="container mt-5 mx-3">
+      <h1 className="text-center mb-5 titleSize text-decoration-underline">My Projects</h1>
 
       <div className="d-flex align-items-center justify-content-center position-relative">
         {/*left btn to show previous project*/}
@@ -85,18 +85,18 @@ const Projects = () => {
           ❮
         </button>
 
-        <div id="projectsCarousel" className="carousel slide w-100">
+        <div id="projectsCarousel" className="carousel slide w-100 ">
           <div className="carousel-inner">
             {/*for 1st 3 slide*/}
             <div className="carousel-item active ">
               <div className="row justify-content-center ">
                 {/*it will map over the first 3 projects start from 0 index resulting in 3 item*/}
                 {projects.slice(0, 3).map((project) => (
-                  <div className="col-md-4 d-flex align-items-stretch mt-4" key={project.id}>
-                    <div className="card cardPart h-100  d-flex flex-column card shadow">
+                  <div className="col-md-4 d-flex align-items-stretch mt-4 shadow " key={project.id}>
+                    <div className="card projectCard cardPart h-100  d-flex flex-column card shadow p-1">
                       <img
                         src={project.image}
-                        className="card-img-top cardImg  equalImg"
+                        className="card-img-top cardImg equalImg"
                         alt={project.title}
                       />
                       <div className="card-body infoPart flex-column text-center">
@@ -124,8 +124,8 @@ const Projects = () => {
               <div className="row justify-content-center">
                 {/*it will map over the projects from index 3 to 5 */}
                 {projects.slice(3, 6).map((project) => (
-                  <div className="col-md-4 d-flex align-items-stretch " key={project.id}>
-                    <div className="card cardPart d-flex flex-column card shadow ">
+                  <div className="col-md-4 d-flex align-items-stretch shadow" key={project.id}>
+                    <div className="card cardPart d-flex flex-column card shadow p-1">
                       <img
                         src={project.image}
                         className="card-img-top cardImg equalImg"

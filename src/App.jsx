@@ -35,7 +35,7 @@ const App = () => {
     <>
     <MessageProvider>
       <NavBar />
-      <div id="home" className="container mt-5" data-aos="fade-up">
+      <div id="home" className="container mt-2" data-aos="fade-up">
         <HomePage />
       </div>
       <div id="about" className="container mt-5" data-aos="fade-up">

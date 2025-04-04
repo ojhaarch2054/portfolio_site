@@ -21,10 +21,39 @@
 }
 
 .txt{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
 .dialogBox{
     background-color: rgba(0, 0, 0, 0.5);
 }
+h3, h1, h2 {
+    font-weight: 800;
+    font-size: xx-large;
+  }
+  
+  p, small {
+    font-weight: 300;
+  }
+
+  .textSection {
+    padding-left: 10px;
+  }
+  
+  .imgSize {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .iconBtn:hover {
+    box-shadow: inset 4px 4px 8px #b3b3b3, inset -4px -4px 8px #ffffff; 
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    .textSection {
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  }

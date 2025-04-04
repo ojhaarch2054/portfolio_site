@@ -1,0 +1,28 @@
+.card {
+    background: linear-gradient(to right, #64809d, #5b5858);
+    color: white;
+    border: none;
+  }
+  
+  .card .list-group-item {
+    background: transparent;
+    border: none;
+    color: white;
+  }
+  
+  .card .list-group-item i {
+    color: white;
+  }
+  .skillCard {
+    max-width: 300px;
+  }
+  
+  .skillContainer {
+    max-width: 1200px;
+  }
+  
+  @media (min-width: 768px) {
+    .skillCard{
+      margin: 0 auto;
+    }
+  }
