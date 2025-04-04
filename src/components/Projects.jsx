@@ -16,7 +16,7 @@ const projects = [
     title: "Budget Tracker",
     image: budget,
     description: "It is a web application which allows user to manage their daily finances. It is made using React, Bootstrap, Nodejs, express and PostgreSQL.This have has authentication and authorizattion feature. I have used JWT for authentication.",
-    link: "#",
+    link: "https://github.com/ojhaarch2054/Budget_tracker",
     githubLink: "https://ojhaarch2054/Budget_tracker",
   },
   {
@@ -24,7 +24,7 @@ const projects = [
     title: "Movie App",
     image: movie,
     description: "This is a complete movie application made using React, Node.js, Express and PostgreSQL and was made in a group as a part of the coursework. The movie app enables users to explore movies, view showtimes, create groups and engage with other users.",
-    link: "#",
+    link: "https://github.com/Movie-App-Project-OAMK-G15/movie_app",
     githubLink: " https://github.com/Movie-App-Project-OAMK-G15/movie_app",
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     title: "Quizzify",
     image: quiz,
     description: "This app was developed in a group for our coursework. It is a quiz app in which user can take quizzes on various topics. The results from the quizzes are stored and the user can find insights on their performance on the quizzes. I worked in the UI design for this project using Bootstrap, HTML and CSS.",
-    link: "#",
+    link: "https://github.com/Gloryozo/Quizzify",
     githubLink: "https://github.com/Gloryozo/Quizzify",
   },
   {
@@ -40,7 +40,7 @@ const projects = [
     title: "Feedback Page",
     image: feedback,
     description: "Created a feedback page using Bootstrap, Node.js, Javascript, Express, and PostgreSQL. The page stores customer details and feedback in a database. Also, the page user can give feedback by text and rating stars.",
-    link: "#",
+    link: "https://github.com/ojhaarch2054/Feedback_page",
     githubLink: "https://github.com/ojhaarch2054/Feedback_page",
   },
   {
@@ -56,7 +56,7 @@ const projects = [
     title: "Weather_App",
     image: weather,
     description: "This is a simple website where you can check the current weather for different places. The website fetches weather data from the OpenWeatherMap API and displays it in a user-friendly format. I built it using React and OpenWeatherMap API to get the weather information online.",
-    link: "#",
+    link: "https://github.com/ojhaarch2054/Weather-info",
     githubLink: "https://github.com/ojhaarch2054/Weather-info",
   },
 ];
