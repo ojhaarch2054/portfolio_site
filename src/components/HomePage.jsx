@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import picture from "../assets/profile.png";
 import "../styles/home.css";
-import mycv from "../assets/Ojha_Archana_Cv.pdf";
+import mycv from "../assets/Ojha_Archana_CV.pdf";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { MessageContext } from "../context/MessageContext";
 
