@@ -8,10 +8,19 @@ import quiz from "../assets/quiz.png";
 import feedback from "../assets/feedback.png";
 import quote from "../assets/quote.jpg";
 import weather from "../assets/weather.png";
+import shopping from "../assets/shopp.avif"
 
 const projects = [
   {
     id: 1,
+    title: "Ecommerce App",
+    image: shopping,
+    description:"A full-stack E-commerce app with user authentication, product listings, admin profile for product management, and add-to-cart functionality. Built with React, Bootstrap, Node.js, Express, and PostgreSQL using JWT and bcrypt for security.",
+    link: "https://github.com/ojhaarch2054/EcommerceApp",
+    githubLink: "https://github.com/ojhaarch2054/EcommerceApp",
+  },
+  {
+    id: 2,
     title: "Budget Tracker",
     image: budget,
     description:
@@ -20,7 +29,7 @@ const projects = [
     githubLink: "https://ojhaarch2054/Budget_tracker",
   },
   {
-    id: 2,
+    id: 3,
     title: "Movie App",
     image: movie,
     description:
@@ -29,7 +38,7 @@ const projects = [
     githubLink: " https://github.com/Movie-App-Project-OAMK-G15/movie_app",
   },
   {
-    id: 3,
+    id: 4,
     title: "Quizzify",
     image: quiz,
     description:
@@ -38,7 +47,7 @@ const projects = [
     githubLink: "https://github.com/Gloryozo/Quizzify",
   },
   {
-    id: 4,
+    id: 5,
     title: "Feedback Page",
     image: feedback,
     description:
@@ -47,7 +56,7 @@ const projects = [
     githubLink: "https://github.com/ojhaarch2054/Feedback_page",
   },
   {
-    id: 5,
+    id: 6,
     title: "Quote_App",
     image: quote,
     description:
@@ -56,7 +65,7 @@ const projects = [
     githubLink: "https://github.com/ojhaarch2054/Daily-Quote-generater",
   },
   {
-    id: 6,
+    id: 7,
     title: "Weather_App",
     image: weather,
     description:
@@ -148,6 +157,42 @@ const Projects = () => {
                         alt={project.title}
                       />
                       <div className="card-body infoPart flex-column  text-center ">
+                        <h5 className="card-title">{project.title}</h5>
+                        <p className="card-text">{project.description}</p>
+                        <a
+                          href={project.link}
+                          className="btn webBtn projectBtn"
+                        >
+                          Visit Website
+                        </a>
+                        <a
+                          onClick={webClick}
+                          className="btn webBtn mx-2 projectBtn"
+                        >
+                          <i className="bi bi-github"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+                
+              </div>
+            </div>
+               {/*for 7th project*/}
+               <div className="carousel-item">
+              <div className="row justify-content-center">
+                {projects.slice(6, 7).map((project) => (
+                  <div
+                    className="col-md-4 d-flex align-items-stretch"
+                    key={project.id}
+                  >
+                    <div className="card cardPart d-flex flex-column card shadow p-1">
+                      <img
+                        src={project.image}
+                        className="card-img-top cardImg equalImg"
+                        alt={project.title}
+                      />
+                      <div className="card-body infoPart flex-column text-center">
                         <h5 className="card-title">{project.title}</h5>
                         <p className="card-text">{project.description}</p>
                         <a
