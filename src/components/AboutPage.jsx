@@ -7,10 +7,10 @@ const AboutPage = () => {
     window.open("https://www.youtube.com/@ItsmeArchana-8");
   };
   const tiktokClick = () => {
-    window.open("https://www.tiktok.com/@arch_ana123?lang=en");
+    window.open("https://www.tiktok.com/@nepali_in_nordics_1");
   };
   const instaClick = () => {
-    window.open("https://www.instagram.com/ojhaarchana30/");
+    window.open("https://www.instagram.com/nepali_in_nordics/");
   };
   return (
     <div>
