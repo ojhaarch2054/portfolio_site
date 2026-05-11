@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import picture from "../assets/profile.png";
 import "../styles/home.css";
-import mycv from "../assets/Archana_ojha_cv.pdf";
+import mycv from "../assets/Archana_Ojha_CV.pdf";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { MessageContext } from "../context/MessageContext";
 
@@ -44,14 +44,12 @@ const HomePage = () => {
           <div className="col-12 col-md-7  textSection text-wrap">
             <h3>
               Hi, I'm Archana Ojha <br />
-              <small className=" fs-5">Software Developer Intern at Nome OY</small>
+              <small className=" fs-5">Trainee at Nokia</small>
               <br />
               <br />
               <small className="txt d-block">
-                I’m still studying — but I’ve already started creating.
+              At Nokia, I am working on L1 Library CI, developing scripts and test cases, maintaining Jenkins pipelines, analyzing test results, and debugging issues.
                 <br />
-                Bringing ideas to life on the web with code, design, and
-                curiosity.
               </small>
             </h3>
             <button

@@ -24,15 +24,7 @@ const AboutPage = () => {
           <div className="col-12 col-md-7 order-2 order-md-1 mt-5">
             <h3 className="textSection h3 text-center text-md-start">
               <small className="txt txtContainer d-block s-6 fs-md-5 text-wrap">
-                Hello! I'm Archana. I am a young and motivated programmer
-                and web developer. I am studying for a Bachelor’s degree
-                in Information Technology at Oulu University of Applied
-                Sciences (OAMK). I have a strong interest in web application
-                development and experience working with JavaScript, Python,
-                TypeScript, React, Node.js, SQL, and PostgreSQL. I enjoy
-                creating full-stack applications as part of my studies and
-                personal projects. I am always learning and improving my skills
-                to build better websites and applications.
+              Hello! I’m Archana, a programmer and web developer pursuing a Bachelor’s in IT at Oulu University of Applied Sciences (OAMK). I build full-stack applications using JavaScript, Python, TypeScript, React, Node.js, SQL, and PostgreSQL. Currently, I’m interning at Nokia, working on L1 Library CI: Developing scripts, maintaining Jenkins pipelines, analyzing test results, and debugging issues. I’m always learning to improve my skills and create better applications and automated solutions.
               </small>
               <br />
               <small className="h4 d-block s-6 fs-md-5 ">
